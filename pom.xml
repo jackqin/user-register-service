@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.colorcc</groupId>
+		<artifactId>user-register</artifactId>
+		<version>1.0.0</version>
+		<relativePath>../user-register/pom.xml</relativePath>
+	</parent>
+	<artifactId>user-register-service</artifactId>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.colorcc.common</groupId>
+			<artifactId>common-mapper</artifactId>
+			<version>${com.colorcc.common.mapper}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.colorcc.common</groupId>
+			<artifactId>common-utils</artifactId>
+			<version>${com.colorcc.common.utils}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.colorcc</groupId>
+			<artifactId>user-register-dao</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20090211</version>
+		</dependency>
+
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>spring-milestone</id>
+			<name>Spring Maven MILESTONE Repository</name>
+			<url>http://maven.springframework.org/milestone</url>
+		</repository>
+	</repositories>
+</project>
